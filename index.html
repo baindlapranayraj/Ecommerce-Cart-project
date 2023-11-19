@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Cart Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+      </style>
+      <link rel="shortcut icon" href="/assets/E-commerce logo-uZ_tcmRq.png" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/index-SB6d-bZC.css">
+</head>
+<body class="font-[poppins]">
+
+    <nav class="shadow-md flex justify-between bg-white py-4 px-8 fixed top-0 right-0 left-0 md:bg-white md:px-20 z-50">
+        <a href="" class="text-zinc-500 text-xl cursor-pointer">Ecommerce</a>
+        <i class="ri-shopping-cart-line cart text-3xl cursor-pointer"></i>
+
+        <div class="cart-items  px-3 duration-300 bg-white shadow-2xl fixed top-0 right-0 w-80 md:w-[410px] h-screen translate-x-full">
+            <h1 class="text-center font-semibold text-3xl mt-8">Your Cart</h1>
+
+            <div class="cart-content mt-7 space-y-3">
+                <!-- <div class="cart-box flex md:justify-around justify-start items-start ">
+
+                    <img src="/assets/product3-Hwp_5xEg.jpg" class="h-24 cart-image" alt="">
+                
+                    <div class="detail-box space-y-3 ">
+                        <div class="cart-product-title">${title}</div>
+                        <div class="cart-price">${ProductPrice}</div>
+                        <input type="number" name="" value="1" class="cart-quantity outline rounded-sm border-black w-10">
+                        <i class="ri-delete-bin-7-fill cursor-pointer remove-item text-xl text-red-600 ml-14"></i> 
+                    </div>
+                
+                </div> -->
+            </div>
+
+            <hr class="border-2 border-black mt-5">
+            <div class="Total px-4 flex gap-5 justify-end mt-2">
+                <div class="Total-title font-medium text-xl">Total</div>
+                <div class="Total-price text-zinc-500 text-xl">$0</div>
+            </div>
+
+            <button class="btn-buy bg-orange-600 ml-32 mt-4 px-4 py-2 text-white rounded-md hover:text-orange-600 hover:bg-white hover:border-orange-600 hover:border-2 duration-200">Buy Now</button>
+
+            <i class="ri-close-line text-2xl cursor-pointer font-semibold cart-close absolute top-3 right-3"></i>
+
+        </div>
+
+    </nav>
+
+    <section class="shop-container p-2 px-8 mt-16">
+
+        <h1 class="text-3xl font-medium text-center my-6">Shop Products</h1>
+
+        <div class="product-cards flex flex-wrap gap-5 justify-center md:justify-center md:items-start">
+
+            
+            <div class="product-card group shadow-md p-3 rounded-lg hover:-translate-y-1 duration-300 cursor-pointer hover:shadow-lg w-72 relative">
+                
+                <img src="/assets/product1-yj93Rc8m.jpg" class="Product_img" alt="">
+                <h1 class="text-xl font-medium title my-3">AEROREADY SHIRT</h1>
+                <span class="text-xl font-medium price">$25</span>
+                <i class="ri-shopping-bag-line cursor-pointer shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                
+            </div>
+            
+            
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product2-iFDZHj0x.jpg" class="Product_img" alt="">
+                <h1 class="text-xl title font-medium my-3">MARSHALL EARBUDS</h1>
+                
+
+                    <p class="text-xl font-medium price">$132</p>
+                    <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                    
+            
+            </div>
+
+
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product3-Hwp_5xEg.jpg" class="Product_img w-full h-[270px]" alt="">
+                <h1 class="text-xl title font-medium my-3">JOCKEY HODDIE</h1>
+                
+                <span class="text-xl font-normal price">$3.99</span>
+                <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                
+            </div>
+            
+
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product4-QvZ0vPdf.jpg" class="Product_img h-[270px]" alt="">
+                <h1 class="text-xl title font-medium my-3">STELL WATER BOTTLE</h1>
+                
+
+                    <p class="text-xl font-medium price">$1.8</p>
+                    <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                    
+            
+            </div>
+
+
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product5-43pLX-qO.jpg" class="Product_img h-[270px]" alt="">
+                <h1 class="text-xl title font-medium my-3">Chopard Sunglasses</h1>
+                
+
+                    <p class="text-xl font-medium price">$400</p>
+                    <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                    
+            
+            </div>
+
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product6-VG-TPG6G.jpg" class="Product_img h-[270px]" alt="">
+                <h1 class="text-xl title font-medium my-3">Puma Cap</h1>
+                
+
+                    <p class="text-xl font-medium price">$6</p>
+                    <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                    
+            
+            </div>
+
+
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product7-8k0vdx7f.jpg" class="Product_img h-[270px]" alt="">
+                <h1 class="text-xl title font-medium my-3">Adidas Bag</h1>
+                
+
+                    <p class="text-xl font-medium price">$4</p>
+                    <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                    
+            
+            </div>
+
+
+            <div class="product-card group shadow-md p-3 rounded-lg cursor-pointer hover:-translate-y-1 hover:shadow-lg w-72 duration-300 relative">
+                
+                <img src="/assets/product8-1GC5nszv.jpg" class="Product_img h-[270px]" alt="">
+                <h1 class="text-xl title font-medium my-3">Adidas-Shoe</h1>
+                
+
+                    <p class="text-xl font-medium price">$5</p>
+                    <i class="ri-shopping-bag-line shopping-bag text-2xl hover:bg-black hover:text-white hover:px-1 hover:py-1 absolute bottom-0 right-0 duration-200"></i>
+                    
+            
+            </div>
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
